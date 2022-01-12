@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main__text-heading {
+  font-size: 3.8vw;
+  font-weight: 500;
+  text-align: justify;
+} 
+.container {
+  padding-top: 5vh;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.main__text-description {
+  font-size: 1.3vw;
+  text-align: justify;
+}
+.main__text-description2 {
+  font-size: 1.3vw;
+  text-align: justify;
+}
+.columns {
+  padding-top: 1.5vh;
+  padding-left: 1.5vw;
+  padding-right: 1.5vw;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.columns__1-3 {
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 1.5vw; 
+  padding-right: 1.5vw;
+}
+.columns__1-2 {
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 1.5vw; 
+  padding-right: 1.5vw;
+}
+.method {
+  vertical-align: top;
+  padding-left: 1.5vw; 
+  padding-right: 1.5vw; 
+}
+.method_list {
+  padding: 10px;
+  width: 85%;
+  margin: 20px;
+}
+.how-to-evaluate {
+  padding: 20px;
+  width: 85%;
+  margin: auto;
+  border: 2px solid black;
+}
+.evaluatecolor_list {
+  padding: 10px;
+  width: 50%;
+  margin: 6px;
+}
+img {
+  margin-top: 5px;
+  width: 250px;
+  margin-right: 60px;
+}
