@@ -15,7 +15,7 @@ h3{
   background-size: contain;
 }
 .main__text-description {
-  font-size: 2.5vw;
+  font-size: 2vw;
   text-align: justify;
 }
 .main__text-description2 {
@@ -142,7 +142,7 @@ navbar__menu {
   font-family: 'Gill Sans','Gill Sans MT', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .sketch {
- width: 70%;
+ width: 50%;
 }
 .make_text-number{ 
   margin:0%
