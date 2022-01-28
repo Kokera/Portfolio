@@ -3,6 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+h1{
+  margin: 20px;
+  text-align: center;
+  border: 2px solid black;
+}
 h3{
   font-size: 3.5vw;
 }
@@ -31,14 +36,15 @@ h3{
   background-size: contain;
 }
 .columns__1-3 {
-  width: 50%;
+  width: 33%;
+  font-size: 4.5vw;
   display: inline-block;
   vertical-align: top;
   padding-left: 1.5vw; 
   padding-right: 1.5vw;
 }
 .columns__1-2 {
-  width: 50%;
+  width: 40%;
   display: inline-block;
   vertical-align: top;
   padding-left: 1.5vw; 
@@ -95,12 +101,12 @@ navbar__logo {
   margin-right: 100px;
   width: 50%;
 }
-navbar__menu {
+.navbar__menu {
  padding-right: 40px;
 }
 .img-ED {
-  margin:30px;
-  width: 30%;
+  margin:100px;
+  width: 60%;
   display: inline-block;
 }
 .prototype{
@@ -126,8 +132,6 @@ navbar__menu {
   margin-left: 30px;
 }
 .material_text {
- 
- margin-left: 10px;
  width: 60%;
  font-family: 'Gill Sans','Gill Sans MT', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -154,4 +158,8 @@ navbar__menu {
 .thankyou-logo {
   margin: 80px;
   height:50pt;
+}
+.home__logo{
+  margin: 30px;
+ border: 2px solid black;
 }
