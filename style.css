@@ -6,7 +6,7 @@
 h1{
   margin: 20px;
   text-align: center;
-  border: 2px solid black;
+  border: 2px solid #333;
 }
 h3{
   font-size: 3.5vw;
@@ -22,10 +22,12 @@ h3{
 .main__text-description {
   font-size: 2vw;
   text-align: justify;
+  font-family: serif;
 }
 .main__text-description2 {
   font-size: 2.5vw;
   text-align: justify;
+  font-family: serif;
 }
 .columns {
   padding-top: 1.5vh;
@@ -36,8 +38,10 @@ h3{
   background-size: contain;
 }
 .columns__1-3 {
+  margin: center;
   width: 33%;
-  font-size: 4.5vw;
+  font-size: 15px;
+  font-family: erif;
   display: inline-block;
   vertical-align: top;
   padding-left: 1.5vw; 
@@ -71,7 +75,7 @@ h3{
   padding: 20px;
   width: 85%;
   margin: auto;
-  border: 2px solid black;
+  border: 2px solid #333;
 }
 .evaluatecolor_list {
   padding: 10px;
@@ -140,7 +144,7 @@ navbar__logo {
  width: 60pt;
 }
 .make_text-number {
-  color: cadetblue;
+  color: #333;
   margin: 100px;
   height: 30pt; 
   font-family: 'Gill Sans','Gill Sans MT', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -161,5 +165,87 @@ navbar__logo {
 }
 .home__logo{
   margin: 30px;
- border: 2px solid black;
+  border: 2px solid#333;
+  color:#333;
+  border-radius: 10px;/*角の丸み*/
+}
+/*==================================================
+共通　横並びのための設定
+===================================*/
+
+.gnavi{
+    display: flex;
+    flex-wrap: wrap;/*スマホ表示折り返し用なのでPCのみなら不要*/
+    margin:0 0 50px 0;
+    list-style: none;
+  
+}
+
+.gnavi li a{
+    display: block;
+    padding:10px 30px;
+    text-decoration: none;
+    color: ##0481A2;
+}
+
+.gnavi li{
+    margin-bottom:20px;
+}
+
+/*==================================================
+共通　横並びのための設定
+===================================*/
+
+.gnavi{
+    display: flex;
+    flex-wrap: wrap;/*スマホ表示折り返し用なのでPCのみなら不要*/
+    margin:0 0 50px 0;
+    list-style: none;
+}
+
+.gnavi li a{
+    display: block;
+    padding:10px 30px;
+    text-decoration: none;
+    color: #333;
+}
+
+.gnavi li{
+    margin-bottom:20px;
+}
+
+/*==================================================
+　5-3-1 中心から外に線が伸びる（下部）
+===================================*/
+
+.gnavi li a{
+    /*線の基点とするためrelativeを指定*/
+	position: relative;
+}
+
+.gnavi li.current a,
+.gnavi li a:hover{
+	color:#0481A2;
+}
+
+.gnavi li a::after {
+    content: '';
+    /*絶対配置で線の位置を決める*/
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    /*線の形状*/
+    width: 80%;
+    height: 2px;
+    background:#0481A2;
+    /*アニメーションの指定*/
+    transition: all .3s;
+    transform: scale(0, 1);/*X方向0、Y方向1*/
+    transform-origin: center top;/*上部中央基点*/
+}
+
+/*現在地とhoverの設定*/
+.gnavi li.current a::after,
+.gnavi li a:hover::after {
+    transform: scale(1, 1);/*X方向にスケール拡大*/
 }
